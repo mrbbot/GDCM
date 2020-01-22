@@ -12,28 +12,18 @@ cache:
   - 'C:\Program Files (x86)\NSIS'
 
 ## http://www.appveyor.com/docs/installed-software#python
-## Python 2.7; 32-bit version
-#    - python: C:\Python27;C:\Python27\Scripts
-## Python 2.7; 64-bit version
-#    - python: C:\Python27-x64;C:\Python27-x64\Scripts
-## Python 3.4; 32-bit version
-#    - python: C:\Python34;C:\Python34\Scripts
-## Python 3.4; 64-bit version
-#    - python: C:\Python34-x64;C:\Python34-x64\Scripts
+## Python 3.7; 32-bit version
+#    - python: C:\Python37;C:\Python37\Scripts
+## Python 3.7; 64-bit version
+#    - python: C:\Python37-x64;C:\Python37-x64\Scripts
 
 environment:
   matrix:
-  - VS_GEN: Visual Studio 12 2013
-    CONFIG: Release
-    B_NAME: Windows-x86
-    DO_REL: true
-    PYTHONHOME: C:\Python27
-    JAVA_HOME: C:\Program Files (x86)\Java\jdk1.7.0
   - VS_GEN: Visual Studio 12 2013 Win64
     CONFIG: Release
     B_NAME: Windows-x86_64
     DO_REL: true
-    PYTHONHOME: C:\Python34-x64
+    PYTHONHOME: C:\Python37-x64
     JAVA_HOME: C:\Program Files\Java\jdk1.8.0
 #  - VS_GEN: Visual Studio 14 2015 Win64
 #    CONFIG: Release
